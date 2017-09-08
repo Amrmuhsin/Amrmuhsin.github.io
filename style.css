@@ -1,0 +1,84 @@
+table,tr,td {
+		background-color: LightGoldenRodYellow ;
+		font-family: century gothic;
+		color: green;
+		border: 1px solid aqua;
+		padding: 5px;
+		border-collapse: collapse;
+		position: center;
+	}
+
+.h {
+		border: 8px groove yellow;
+		padding: 20px;
+	}
+
+.posisi {
+		position: absolute;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: auto;
+		margin-top: auto;
+		left: 0;
+		right: 0;
+		top: 100px;
+		bottom: 0;
+	}
+
+body {
+	background-color: lightblue;
+	background-repeat: no-repeat;
+	background-size: 1400px auto;
+}
+
+div.container {
+	    width: 100%;
+	    border: 1px solid gray;
+		}
+
+header, footer {
+	    padding: 1em;
+	    color: white;
+	    background-color: black;
+	    clear: left;
+	    text-align: center;
+		}
+
+nav {
+	    float: left;
+	    max-width: 180px;
+	    margin: 0;
+	    padding: 1em;
+		}
+
+nav ul {
+	    list-style-type: none;
+	    padding: 0;
+		}
+	   
+nav ul a {
+	    text-decoration: none;
+		}
+
+article {
+	    margin-left: 1px;
+	    border-left: 1px solid gray;
+	    padding: 1em;
+	    overflow: hidden;
+	    height: 473px;
+		}
+
+.fa-facebook {
+  /*background: #3B5998;*/
+  color: white;
+}
+
+.fa-google {
+  /*background: #dd4b39;*/
+  color: white;
+}
+
+.fa-instagram {
+ /* background: #125688;*/
+  color: white;
+}
