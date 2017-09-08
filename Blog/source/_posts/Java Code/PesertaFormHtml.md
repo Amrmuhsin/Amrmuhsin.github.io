@@ -1,0 +1,80 @@
+---
+title: Peserta Form Html
+tags:
+    - Files
+categories:
+    - Source Code
+commands: true
+date: 2017-07-07 09:00:00
+---
+
+## Peserta form.html Java Code files
+
+    <!DOCTYPE html>
+    <!--
+    To change this license header, choose License Headers in Project Properties.
+    To change this template file, choose Tools | Templates
+    and open the template in the editor.
+    -->
+    <html>
+        <head>
+            <title>Edit Peserta</title>
+            <meta charset="UTF-8"/>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        </head>
+        <body>
+            
+            <div th:fragment="content">
+                <br/>
+                <br/>
+            <h1>Edit Peserta</h1>
+            
+            <form  action="#" th:action="@{/peserta/form}" th:object="${peserta}" 
+                   method="post" enctype="multipart/form-data">
+                
+                <table border="1">
+                    
+                    <tbody>
+                        
+                        <tr>
+                            <td>Id</td>
+                            <td><input type="hidden" th:field="*{id}" /></td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Nama</td>
+                            <td><input type="text" th:field="*{nama}" /></td>
+                            <td th:if="${#fields.hasErrors('nama')}" th:errors="*{nama}">Pesan Error</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Email</td>
+                            <td><input type="text" th:field="*{email}" /></td>
+                            <td th:if="${#fields.hasErrors('email')}" th:errors="*{email}">Pesan Error</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Tanggal Lahir</td>
+                            <td><input type="text" th:field="*{tanggalLahir}" /></td>
+                            <td th:if="${#fields.hasErrors('tanggalLahir')}" th:errors="*{tanggalLahir}">Pesan Error</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Foto</td>
+                            <td><input type="file" name="foto" /></td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td><input type="submit" value="Simpan" /></td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        
+                    </tbody>
+                    
+                </table>
+            </form>
+            </div>
+        </body>
+    </html>
