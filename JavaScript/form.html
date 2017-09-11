@@ -1,0 +1,106 @@
+<html>
+
+<head>
+    <title>Belajar Html</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+        <style>
+            .header {
+                background-color: red;
+                height: 80px;
+            }
+            
+            .content {
+                background-color: #fff;
+                height: 500px;
+                padding: 20px;
+            }
+            
+            .footer {
+                background-color: brown;
+                height: 30px;
+            }
+        </style>
+</head>
+
+<body>
+    <div class="header">
+        Ini Header
+    </div>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Artivisi</a>
+            </div>
+
+    <div class="content row">
+        <div class="col-md-6 col-sm-3">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h1>Kalkulator</h1>
+                </div>
+                <div class="panel-body">
+                    <form action="/" method="GET">
+                        <div class="form-group">
+                            <label>Input 1</label>
+                            <input type="number" id="number1" class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Input 2</label>
+                            <input type="number" id="number2" class="form-control">
+                        </div>
+
+                        <button class="btn btn-primary" type="button" onclick="tambah()">Tambah</button>
+                        <button class="btn btn-primary" type="button" onclick="kali()">Kali</button>
+                        <button class="btn btn-primary" type="button" onclick="bagi()">Bagi</button>
+                        <button class="btn btn-primary" type="button" onclick="kurang()">Kurang</button>
+
+			<div class="form-group">
+                            <label for="nama">Hasil</label>
+                            <input type="text" id="hasil"  class="form-control">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script>
+function tambah() {
+   var input1 =  document.getElementById("number1").value;
+   var input2 =  document.getElementById("number2").value;
+   document.getElementById("hasil").value = parseInt(input1) + parseInt(input2);
+}
+function kali() {
+   var input1 =  document.getElementById("number1").value;
+   var input2 =  document.getElementById("number2").value;
+   document.getElementById("hasil").value = parseInt(input1) * parseInt(input2);
+}
+function bagi() {
+    var input1 =  document.getElementById("number1").value;
+    var input2 =  document.getElementById("number2").value;
+    document.getElementById("hasil").value = parseInt(input1) / parseInt (input2);
+}
+function kurang() {
+   var input1 =  document.getElementById("number1").value;
+   var input2 =  document.getElementById("number2").value;
+   document.getElementById("hasil").value = parseInt(input1) - parseInt(input2);
+}
+</script>
+
+    <div class="footer">
+        @artivisi
+    </div>
+</body>
+
+</html>
