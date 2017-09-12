@@ -40,25 +40,68 @@
 
 <article>
 	<form action="#">
-	<h3>Hai...!!! Selamat Datang</h3>
-	<h5>Ini adalah profile tentang saya <br>
-  <strong>Belom Sempat Di isi xD</strong>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  </h5>
+	<div class="content center">
+        <div class="col-md-4 col-sm-2">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h2>Kalkulator</h2>
+                </div>
+                <div class="panel-body">
+                    <form action="/" method="GET">
+                        <div class="form-group">
+                            <label>Input 1</label>
+                            <input type="number" id="number1" class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Input 2</label>
+                            <input type="number" id="number2" class="form-control">
+                        </div>
+
+                        <button class="btn btn-primary" type="button" onclick="tambah()">Tambah</button>
+                        <button class="btn btn-primary" type="button" onclick="kali()">Kali</button>
+                        <button class="btn btn-primary" type="button" onclick="bagi()">Bagi</button>
+                        <button class="btn btn-primary" type="button" onclick="kurang()">Kurang</button>
+
+			<div class="form-group"><br>
+                            <label for="nama">Hasil</label>
+                            <input type="text" id="hasil"  class="form-control">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script>
+function tambah() {
+   var input1 =  document.getElementById("number1").value;
+   var input2 =  document.getElementById("number2").value;
+   document.getElementById("hasil").value = parseInt(input1) + parseInt(input2);
+}
+function kali() {
+   var input1 =  document.getElementById("number1").value;
+   var input2 =  document.getElementById("number2").value;
+   document.getElementById("hasil").value = parseInt(input1) * parseInt(input2);
+}
+function bagi() {
+    var input1 =  document.getElementById("number1").value;
+    var input2 =  document.getElementById("number2").value;
+    document.getElementById("hasil").value = parseInt(input1) / parseInt (input2);
+}
+function kurang() {
+   var input1 =  document.getElementById("number1").value;
+   var input2 =  document.getElementById("number2").value;
+   document.getElementById("hasil").value = parseInt(input1) - parseInt(input2);
+}
+</script>
 </form>
 </article>
 
 <footer>
-	<span class="fa fa-google" aria-hidden="true">  Amr.muhsin@gmail.com</span>
-	<span class="fa fa-facebook" aria-hidden="true">  Muhsin Amr</span>  
-	<span class="fa fa-instagram" aria-hidden="true">  @muhsin.amr</span>
+	<a href="mailto:another_konpeki@aol.com" class="fa fa-google" aria-hidden="true"> Amr.muhsin@gmail.com</a>
+	<a href="https://www.facebook.com/amr.muhsin" class="fa fa-facebook" aria-hidden="true"> Muhsin Amr</a>  
+	<a href="https://www.instagram.com/muhsin.amr" class="fa fa-instagram" aria-hidden="true"> muhsin.amr</a>
 </footer>
 </div>
 
