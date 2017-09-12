@@ -1,0 +1,34 @@
+.header {
+                background-color: #1F3A93;
+                height: 100px;
+            }
+            
+            .content {
+                background-color: #D2D7D3;
+                height: 500px;
+                padding: 20px;
+                text-align: center;
+            }
+            
+            .footer {
+                padding: 1em;
+                color: black;
+                clear: left;
+                text-align: center;
+                background-color: #336E7B;
+                height: 50px;
+            }
+            .fa-facebook {
+            /*background: #3B5998;*/
+            color: white;
+            }
+
+            .fa-google {
+            /*background: #dd4b39;*/
+            color: white;
+            }
+
+            .fa-instagram {
+            /* background: #125688;*/
+             color: white;
+            }
