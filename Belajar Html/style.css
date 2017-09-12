@@ -27,7 +27,7 @@ table,tr,td {
 	}
 
 body {
-	background-color: lightblue;
+	background-color: #D2D7D3;
 	background-repeat: no-repeat;
 	background-size: 1400px auto;
 }
@@ -37,10 +37,18 @@ div.container {
 	    border: 1px solid gray;
 		}
 
-header, footer {
+header{
+	padding: 1em;
+	    color: white;
+	    background-color: #2C3E50;
+	    clear: left;
+	    text-align: center;
+}
+
+footer {
 	    padding: 1em;
 	    color: white;
-	    background-color: black;
+	    background-color: #336E7B;
 	    clear: left;
 	    text-align: center;
 		}
